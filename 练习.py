@@ -31,8 +31,9 @@ class Home()：
 
         if self.free_area >= item.area:
             self.furniture.append(item.name)
+            self.free_area -= item.area
         else:
-            print(f'家里装满了')
+            print(f'家具太大，装不下')
 #家具类：
 class Furniture ():
     #属性
