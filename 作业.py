@@ -1,17 +1,17 @@
 
 # # 1、打印小猫爱吃鱼，小猫要喝水
 # #创建类
-# class Cats():
-#     #创建方法
-#     def eat(self):
-#         print('小猫爱吃鱼')
-#     def drink(self):
-#         print('小猫要喝水')
-# #创建对象
-# cat1=Cats()
-# #调用方法
-# cat1.eat()
-# cat1.drink()
+class Cats():
+    #创建方法
+    def eat(self):
+        print('小猫爱吃鱼')
+    def drink(self):
+        print('小猫要喝水')
+#创建对象
+cat1=Cats()
+#调用方法
+cat1.eat()
+cat1.drink()
 
 #
 # 2、小明爱跑步，爱吃东西。
@@ -25,24 +25,20 @@ class Person():
     def __init__(self,name,weight):
         self.name = name
         self.weight=weight
+    def __str__(self):
+        return f'{self.name}的体重是{self.weight}公斤'
     #方法
     def do(self):
         print(f'{self.name}爱跑步，爱吃东西')
-        print(f'{self.name}的体重是{self.weight}公斤')
         print('每次跑步会减肥0.5公斤')
         print('每次吃东西体重会增加1公斤')
-    def A(self):
-        print(f'{self.name}的体重是{self.weight}公斤')
-
-
 #创建对象
 person1=Person('小明',75.0)
 #调用方法
 person1.do()
 #创建对象
 person2=Person('小美',45.0)
-#调用方法
-person2.A()
+print(person2)
 #
 
 #
