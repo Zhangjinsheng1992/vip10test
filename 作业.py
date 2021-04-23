@@ -30,12 +30,19 @@ class Person():
     #方法
     def do(self):
         print(f'{self.name}爱跑步，爱吃东西')
-        print('每次跑步会减肥0.5公斤')
-        print('每次吃东西体重会增加1公斤')
+    def run(self):
+        self.weight -= 0.5
+        print(f'每次跑步后的体重是{self.weight}公斤')
+    def eat(self):
+        self.weight += 1
+        print(f'每次吃东西后的体重是{self.weight}公斤')
 #创建对象
 person1=Person('小明',75.0)
 #调用方法
 person1.do()
+person1.run()
+person1.eat()
+print(person1)
 #创建对象
 person2=Person('小美',45.0)
 print(person2)
