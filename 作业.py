@@ -20,6 +20,7 @@ cat1.drink()
 # 3）每次吃东西体重会增加1公斤
 # 4）小美的体重是45.0公斤
 #创建类
+
 class Person():
     #属性
     def __init__(self,name,weight):
